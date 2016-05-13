@@ -9,7 +9,12 @@ document.getElementById("naoCheckBox").checked == false){
 return false;
 
 }
-
+if(document.getElementById("cpf").value.length < 1 ){
+alert('POR FAVOR, PREENCHA O CAMPO CPF!!!');
+document.getElementById("cpf").style.borderColor=erro;
+document.getElementById("cpf").focus();
+return false;
+}
 if(document.getElementById("nome").value.length < 3){
 alert('POR FAVOR, PREENCHA O CAMPO NOME!!!');
 document.getElementById("nome").style.borderColor=erro;
@@ -198,3 +203,4 @@ return cboll;
 } 
 
 }
+
